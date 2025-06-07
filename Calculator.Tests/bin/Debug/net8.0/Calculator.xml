@@ -1,0 +1,254 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Calculator</name>
+    </assembly>
+    <members>
+        <member name="T:Calculator.Attributes.ValidateModelStateAttribute">
+            <summary>
+            Model state validation attribute
+            </summary>
+        </member>
+        <member name="M:Calculator.Attributes.ValidateModelStateAttribute.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)">
+            <summary>
+            Called before the action method is invoked
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:Calculator.Controllers.IMathController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Calculator.Controllers.IMathController.Calculate(Calculator.Models.MathRequest,System.String)">
+            <summary>
+            Perform a math operation on two numbers
+            </summary>
+            <param name="request"></param>
+            <param name="operation">The type of operation to perform (add, subtract, multiply, divide)</param>
+            <response code="200">Successful result of the math operation</response>
+            <response code="400">Bad request (e.g., unsupported operation or division by zero)</response>
+            <response code="401">Unauthorized (missing or invalid JWT)</response>
+        </member>
+        <member name="T:Calculator.Controllers.MathController">
+            <summary>
+            Controller for performing math operations between two numbers.
+            </summary>
+        </member>
+        <member name="M:Calculator.Controllers.MathController.#ctor(Calculator.Services.ICalculatorService)">
+            <summary>
+            Constructor injecting the calculator service.
+            </summary>
+            <param name="calculator">The calculator service instance.</param>
+        </member>
+        <member name="M:Calculator.Controllers.MathController.Calculate(Calculator.Models.MathRequest,System.String)">
+            <summary>
+            Perform a math operation on two numbers
+            </summary>
+            <param name="request">The request containing two numbers.</param>
+            <param name="operation">The type of operation to perform (add, subtract, multiply, divide).</param>
+            <response code="200">Successful result of the math operation</response>
+            <response code="400">Bad request (e.g., unsupported operation or division by zero)</response>
+            <response code="401">Unauthorized (missing or invalid JWT)</response>
+        </member>
+        <member name="T:Calculator.Filters.BasePathFilter">
+            <summary>
+            BasePath Document Filter sets BasePath property of Swagger and removes it from the individual URL paths
+            </summary>
+        </member>
+        <member name="M:Calculator.Filters.BasePathFilter.#ctor(System.String)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="basePath">BasePath to remove from Operations</param>
+        </member>
+        <member name="P:Calculator.Filters.BasePathFilter.BasePath">
+            <summary>
+            Gets the BasePath of the Swagger Doc
+            </summary>
+            <returns>The BasePath of the Swagger Doc</returns>
+        </member>
+        <member name="M:Calculator.Filters.BasePathFilter.Apply(Microsoft.OpenApi.Models.OpenApiDocument,Swashbuckle.AspNetCore.SwaggerGen.DocumentFilterContext)">
+            <summary>
+            Apply the filter
+            </summary>
+            <param name="swaggerDoc">OpenApiDocument</param>
+            <param name="context">FilterContext</param>
+        </member>
+        <member name="T:Calculator.Filters.GeneratePathParamsValidationFilter">
+            <summary>
+            Path Parameter Validation Rules Filter
+            </summary>
+        </member>
+        <member name="M:Calculator.Filters.GeneratePathParamsValidationFilter.Apply(Microsoft.OpenApi.Models.OpenApiOperation,Swashbuckle.AspNetCore.SwaggerGen.OperationFilterContext)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="operation">Operation</param>
+            <param name="context">OperationFilterContext</param>
+        </member>
+        <member name="T:Calculator.Models.MathRequest">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Calculator.Models.MathRequest.Number1">
+            <summary>
+            The first number
+            </summary>
+            <value>The first number</value>
+        </member>
+        <member name="P:Calculator.Models.MathRequest.Number2">
+            <summary>
+            The second number
+            </summary>
+            <value>The second number</value>
+        </member>
+        <member name="M:Calculator.Models.MathRequest.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Calculator.Models.MathRequest.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Calculator.Models.MathRequest.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Calculator.Models.MathRequest.Equals(Calculator.Models.MathRequest)">
+            <summary>
+            Returns true if MathRequest instances are equal
+            </summary>
+            <param name="other">Instance of MathRequest to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Calculator.Models.MathRequest.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:Calculator.Models.MathResponse">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Calculator.Models.MathResponse.Result">
+            <summary>
+            The result of the operation
+            </summary>
+            <value>The result of the operation</value>
+        </member>
+        <member name="M:Calculator.Models.MathResponse.ToString">
+            <summary>
+            Returns the string presentation of the object
+            </summary>
+            <returns>String presentation of the object</returns>
+        </member>
+        <member name="M:Calculator.Models.MathResponse.ToJson">
+            <summary>
+            Returns the JSON string presentation of the object
+            </summary>
+            <returns>JSON string presentation of the object</returns>
+        </member>
+        <member name="M:Calculator.Models.MathResponse.Equals(System.Object)">
+            <summary>
+            Returns true if objects are equal
+            </summary>
+            <param name="obj">Object to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Calculator.Models.MathResponse.Equals(Calculator.Models.MathResponse)">
+            <summary>
+            Returns true if MathResponse instances are equal
+            </summary>
+            <param name="other">Instance of MathResponse to be compared</param>
+            <returns>Boolean</returns>
+        </member>
+        <member name="M:Calculator.Models.MathResponse.GetHashCode">
+            <summary>
+            Gets the hash code
+            </summary>
+            <returns>Hash code</returns>
+        </member>
+        <member name="T:Calculator.Program">
+            <summary>
+            Program
+            </summary>
+        </member>
+        <member name="M:Calculator.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Calculator.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create the web host builder.
+            </summary>
+            <param name="args"></param>
+            <returns>IWebHostBuilder</returns>
+        </member>
+        <member name="T:Calculator.Security.BearerAuthenticationHandler">
+            <summary>
+            class to handle bearer authentication.
+            </summary>
+        </member>
+        <member name="F:Calculator.Security.BearerAuthenticationHandler.SchemeName">
+            <summary>
+            scheme name for authentication handler.
+            </summary>
+        </member>
+        <member name="M:Calculator.Security.BearerAuthenticationHandler.HandleAuthenticateAsync">
+            <summary>
+            verify that require authorization header exists.
+            </summary>
+        </member>
+        <member name="T:Calculator.Services.CalculatorService">
+            <summary>
+            Provides math calculation logic.
+            </summary>
+        </member>
+        <member name="M:Calculator.Services.CalculatorService.Calculate(System.Decimal,System.Decimal,System.String)">
+            <summary>
+            Calculates a result based on the given numbers and operation.
+            </summary>
+            <param name="number1">First number</param>
+            <param name="number2">Second number</param>
+            <param name="operation">Math operation (add, subtract, multiply, divide)</param>
+            <returns>Result of the calculation</returns>
+        </member>
+        <member name="T:Calculator.Startup">
+            <summary>
+            Startup
+            </summary>
+        </member>
+        <member name="M:Calculator.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:Calculator.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime. Use this method to add services to the container.
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Calculator.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>

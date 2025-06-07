@@ -1,0 +1,104 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "Math Operations API",
+    "description" : "A REST API that performs a math operation on two numeric values based on an operation type provided in the HTTP header. Requires JWT authentication.",
+    "version" : "1.0.0"
+  },
+  "servers" : [ {
+    "url" : "http://localhost:5000",
+    "description" : "Local development server"
+  } ],
+  "paths" : {
+    "/calculate" : {
+      "post" : {
+        "tags" : [ "Math" ],
+        "summary" : "Perform a math operation on two numbers",
+        "operationId" : "calculate",
+        "parameters" : [ {
+          "name" : "X-Operation",
+          "in" : "header",
+          "description" : "The type of operation to perform (add, subtract, multiply, divide)",
+          "required" : true,
+          "style" : "simple",
+          "explode" : false,
+          "schema" : {
+            "type" : "string",
+            "enum" : [ "add", "subtract", "multiply", "divide" ]
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/MathRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "description" : "Successful result of the math operation",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/MathResponse"
+                }
+              }
+            }
+          },
+          "400" : {
+            "description" : "Bad request (e.g., unsupported operation or division by zero)"
+          },
+          "401" : {
+            "description" : "Unauthorized (missing or invalid JWT)"
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ]
+      }
+    }
+  },
+  "components" : {
+    "schemas" : {
+      "MathRequest" : {
+        "required" : [ "number1", "number2" ],
+        "type" : "object",
+        "properties" : {
+          "number1" : {
+            "type" : "number",
+            "description" : "The first number",
+            "example" : 10
+          },
+          "number2" : {
+            "type" : "number",
+            "description" : "The second number",
+            "example" : 5
+          }
+        }
+      },
+      "MathResponse" : {
+        "type" : "object",
+        "properties" : {
+          "result" : {
+            "type" : "number",
+            "description" : "The result of the operation",
+            "example" : 2
+          }
+        },
+        "example" : {
+          "result" : 2
+        }
+      }
+    },
+    "securitySchemes" : {
+      "bearerAuth" : {
+        "type" : "http",
+        "scheme" : "bearer",
+        "bearerFormat" : "JWT"
+      }
+    }
+  }
+}
