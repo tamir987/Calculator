@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{331B21C7-9858-4F9C-B8CA-877BD1DBA389}|Calculator.Tests\\Calculator.Tests.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\calculator.tests\\tests\\calculatorservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{331B21C7-9858-4F9C-B8CA-877BD1DBA389}|Calculator.Tests\\Calculator.Tests.csproj|solutionrelative:calculator.tests\\tests\\calculatorservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|solutionrelative:src\\calculator\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|solutionrelative:src\\calculator\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\controllers\\mathcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|solutionrelative:src\\calculator\\controllers\\mathcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|solutionrelative:src\\calculator\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\filters\\basepathfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|solutionrelative:src\\calculator\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{331B21C7-9858-4F9C-B8CA-877BD1DBA389}|Calculator.Tests\\Calculator.Tests.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\calculator.tests\\tests\\calculatorservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{331B21C7-9858-4F9C-B8CA-877BD1DBA389}|Calculator.Tests\\Calculator.Tests.csproj|solutionrelative:calculator.tests\\tests\\calculatorservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD32E373-7D0F-40D0-B44A-665656ADC828}|src\\Calculator\\Calculator.csproj|c:\\users\\user\\desktop\\aspnetcore-server-generated (1)\\src\\calculator\\calculator.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
@@ -66,30 +66,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\Calculator\\appsettings.json",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\appsettings.json",
-              "RelativeToolTip": "src\\Calculator\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-06T10:21:35.076Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "src\\Calculator\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Controllers\\AuthController.cs",
               "RelativeToolTip": "src\\Calculator\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:55:07.566Z",
               "EditorCaption": ""
@@ -109,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BasePathFilter.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Filters\\BasePathFilter.cs",
               "RelativeDocumentMoniker": "src\\Calculator\\Filters\\BasePathFilter.cs",
@@ -122,20 +109,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Startup.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Startup.cs",
               "RelativeDocumentMoniker": "src\\Calculator\\Startup.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Startup.cs*",
-              "RelativeToolTip": "src\\Calculator\\Startup.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Startup.cs",
+              "RelativeToolTip": "src\\Calculator\\Startup.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:39:59.294Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Program.cs",
               "RelativeDocumentMoniker": "src\\Calculator\\Program.cs",
@@ -187,12 +174,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MathController.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Controllers\\MathController.cs",
               "RelativeDocumentMoniker": "src\\Calculator\\Controllers\\MathController.cs",
-              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Controllers\\MathController.cs*",
-              "RelativeToolTip": "src\\Calculator\\Controllers\\MathController.cs*",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\Controllers\\MathController.cs",
+              "RelativeToolTip": "src\\Calculator\\Controllers\\MathController.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAIwC8AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:22:41.114Z",
@@ -200,15 +187,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "CalculatorServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\Calculator.Tests\\Tests\\CalculatorServiceTests.cs",
               "RelativeDocumentMoniker": "Calculator.Tests\\Tests\\CalculatorServiceTests.cs",
               "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\Calculator.Tests\\Tests\\CalculatorServiceTests.cs",
               "RelativeToolTip": "Calculator.Tests\\Tests\\CalculatorServiceTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-06T09:58:15.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\Calculator\\appsettings.json",
+              "ToolTip": "C:\\Users\\USER\\Desktop\\aspnetcore-server-generated (1)\\src\\Calculator\\appsettings.json",
+              "RelativeToolTip": "src\\Calculator\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-06T10:21:35.076Z",
               "EditorCaption": ""
             },
             {
