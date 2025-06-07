@@ -16,10 +16,8 @@ Windows:
 build.bat
 ```
 
-## Run in Docker
+## For testing
 
 ```
-cd src/Calculator
-docker build -t calculator .
-docker run -p 5000:5000 calculator
+GET auth/token
 ```
